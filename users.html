@@ -1,0 +1,12 @@
+<h5 class="text-center">Registed users</h5>
+<dl ng-repeat="user in UsersListCtrl.users">
+	<dl class="dl-horizontal">
+	  <dt>Username</dt>
+	  <dd>{{user.emails[0].address}}</dd>
+	</dl>
+	<dl class="dl-horizontal">
+	  <dt>Introduction</dt>
+	  <dd>{{user.profile.intro}}</dd>
+	</dl>
+	<hr/>
+</dl>
